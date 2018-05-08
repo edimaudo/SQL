@@ -32,10 +32,22 @@ values
 
 #answer business questions
 #Can you get the list of employees with same salary?
+Select distinct e.empid,e.empname,e.salary  
+from employee e, employee e1  
+where e.salary =e1.salary  
+and e.empid != e1.empid 
 
 #How can you find duplicate records in Employee table?
+SELECT EMPID,EMPNAME, SALARY, COUNT(*) AS CNT  
+FROM EMPLOYEE  
+GROUP BY EMPID,EMPNAME, SALARY  
+HAVING COUNT(*)>1 
 
 #Find the second highest salary. 
+
+select max(e.salary)
+from employee e
+where e.salary not in (select max(e.salary) from employee e)
 
 #Can you write a query to find employees with age greater than 30?
 select e.empname
