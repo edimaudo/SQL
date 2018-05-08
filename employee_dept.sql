@@ -31,11 +31,6 @@ values
 ("1","IT"),("2","Admin");
 
 #answer business questions
-#Can you get employee details whose department id is not valid or department id not present in department table?
-
-select 
-from employee e i
-
 #Can you get the list of employees with same salary?
 
 #How can you find duplicate records in Employee table?
@@ -43,6 +38,9 @@ from employee e i
 #Find the second highest salary. 
 
 #Can you write a query to find employees with age greater than 30?
+select e.empname
+from employee e
+where year(CURRENT_DATE) -  year(e.`dob`) > 30;
 
 #Write an SQL Query to print the name of the distinct employees whose DOB is between 01/01/1960 to 31/12/1987
 select distinct (e.empname)
