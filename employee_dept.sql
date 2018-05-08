@@ -31,3 +31,22 @@ values
 ("1","IT"),("2","Admin");
 
 #answer business questions
+#Can you get employee details whose department id is not valid or department id not present in department table?
+
+select 
+from employee e i
+
+#Can you get the list of employees with same salary?
+
+#How can you find duplicate records in Employee table?
+
+#Find the second highest salary. 
+
+#Can you write a query to find employees with age greater than 30?
+
+#Write an SQL Query to print the name of the distinct employees whose DOB is between 01/01/1960 to 31/12/1987
+
+#Please write a query to get the maximum salary from each department. 
+select max(e.salary) as max_salary, deptid
+from employee e
+group by deptid;
