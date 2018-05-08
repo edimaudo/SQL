@@ -45,6 +45,9 @@ from employee e i
 #Can you write a query to find employees with age greater than 30?
 
 #Write an SQL Query to print the name of the distinct employees whose DOB is between 01/01/1960 to 31/12/1987
+select distinct (e.empname)
+from employee e
+where DOB between '1960-01-01' and '1987-12-31';
 
 #Please write a query to get the maximum salary from each department. 
 select max(e.salary) as max_salary, deptid
