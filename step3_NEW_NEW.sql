@@ -1,0 +1,173 @@
+
+INSERT INTO tables VALUES (111111, 'center', 4, 'round table', 'Y', 411111);
+INSERT INTO tables VALUES (111112, 'window', 4, 'square table', 'Y', 411112);
+INSERT INTO tables VALUES (111113, 'restrooms', 2, 'square table', 'N', 411113);
+INSERT INTO tables VALUES (111114, 'entrance', 3, 'round table', 'Y', 411114);
+INSERT INTO tables VALUES (111115, 'center', 2, 'round table', 'N', 411115);
+INSERT INTO tables VALUES (111116, 'patio', 6, 'trestle table', 'Y', 411116);
+INSERT INTO tables VALUES (111117, 'entrance', 2, 'round table', 'Y', 411117);
+INSERT INTO tables VALUES (111118, 'center', 4, 'round table', 'Y', 411118);
+INSERT INTO tables VALUES (111119, 'patio', 8, 'trestle table', 'Y', 411119);
+INSERT INTO tables VALUES (111120, 'window', 4, 'square table', 'N', 411120);
+INSERT INTO tables VALUES (111121, 'restrooms', 5, 'round table', 'N', 411121);
+INSERT INTO tables VALUES (111122, 'entrance', 8, 'round table', 'Y', 411122);
+
+INSERT INTO customer VALUES (211111, 'Michael', 'Green', 'casual dining', 087561);
+INSERT INTO customer VALUES (211112, 'Samantha', 'Lo', 'birthday', 087561);
+INSERT INTO customer VALUES (211113, 'Mario', 'Salinas', 'casual dining', 087561);
+INSERT INTO customer VALUES (211114, 'Peggy', 'Fisher', 'wedding', 087561);
+INSERT INTO customer VALUES (211115, 'Oliver', 'Ping', 'corporate party', 087561);
+INSERT INTO customer VALUES (211116, 'Jack', 'Jonse', 'school party', 087561);
+INSERT INTO customer VALUES (211117, 'Bill', 'Lam', 'casual dining', 087561);
+INSERT INTO customer VALUES (211118, 'Bryan', 'Fenston', 'casual dining', 087561);
+INSERT INTO customer VALUES (211119, 'Maria', 'Reed', 'birthday', 087561);
+INSERT INTO customer VALUES (211120, 'Dana', 'Riz', 'corporate party', 087561);
+INSERT INTO customer VALUES (211121, 'mike', 'something', 'birthday', 087561);
+INSERT INTO customer VALUES (211122, 'ben', 'franklin', 'corporate party', 087561);
+
+INSERT INTO customerEmail VALUES (211111, 'mgreen@gamil.com');
+INSERT INTO customerEmail VALUES (211111, 'mikegreen@hotmail.ca');
+INSERT INTO customerEmail VALUES (211112, 'samlo@live.ca');
+INSERT INTO customerEmail VALUES (211113, 'mariosal89@outlook.com');
+INSERT INTO customerEmail VALUES (211113, 'mario_salinas@gmail.com');
+INSERT INTO customerEmail VALUES (211113, 'dreamteam777@shaw.ca');
+INSERT INTO customerEmail VALUES (211114, 'pfisher82@gmail.com');
+INSERT INTO customerEmail VALUES (211114, 'peggy@outlook.ca');
+INSERT INTO customerEmail VALUES (211115, 'pingping@hotmail.ca');
+INSERT INTO customerEmail VALUES (211115, 'oliping@gmail.com');
+INSERT INTO customerEmail VALUES (211115, 'oliver@shaw.ca');
+INSERT INTO customerEmail VALUES (211116, 'jackjones79@gmail.com');
+INSERT INTO customerEmail VALUES (211116, 'jonse@shaw.ca');
+INSERT INTO customerEmail VALUES (211117, 'billlam005@outlook.com');
+INSERT INTO customerEmail VALUES (211118, 'brfenston@gmail.com');
+INSERT INTO customerEmail VALUES (211118, 'brfen@telus.ca');
+INSERT INTO customerEmail VALUES (211118, 'bryanracer@hotmail.ca');
+INSERT INTO customerEmail VALUES (211118, 'bryansales@mail.com');
+INSERT INTO customerEmail VALUES (211119, 'mariar@yandex.ru');
+INSERT INTO customerEmail VALUES (211119, 'mariareed456@gmail.com');
+INSERT INTO customerEmail VALUES (211120, 'danarizzz@gmail.com');
+INSERT INTO customerEmail VALUES (211121, 'bablaladfbads@gmail.com');
+
+INSERT INTO customerPhone VALUES (211111, '778-573-33-31');
+INSERT INTO customerPhone VALUES (211112, '604-332-56-53');
+INSERT INTO customerPhone VALUES (211112, '604-665-28-44');
+INSERT INTO customerPhone VALUES (211113, '775-235-85-74');
+INSERT INTO customerPhone VALUES (211114, '250-124-10-41');
+INSERT INTO customerPhone VALUES (211115, '778-314-05-51');
+INSERT INTO customerPhone VALUES (211115, '604-141-11-90');
+INSERT INTO customerPhone VALUES (211116, '775-441-33-17');
+INSERT INTO customerPhone VALUES (211117, '780-412-21-78');
+INSERT INTO customerPhone VALUES (211118, '778-120-09-03');
+INSERT INTO customerPhone VALUES (211118, '778-202-92-86');
+INSERT INTO customerPhone VALUES (211118, '604-324-12-88');
+INSERT INTO customerPhone VALUES (211119, '250-340-32-49');
+INSERT INTO customerPhone VALUES (211120, '778-342-31-11');
+INSERT INTO customerPhone VALUES (211121, '778-343-31-91');
+
+INSERT INTO employee VALUES (311111, 'Samuel', 'Miller', 'Male', 087561, 111111);
+INSERT INTO employee VALUES (311112, 'Miranda', 'Kerr', 'Female', 087561, 111112);
+INSERT INTO employee VALUES (311113, 'Michael', 'Kean', 'Male', 087561, 111113);
+INSERT INTO employee VALUES (311114, 'Sebastian', 'Ariel', 'Male', 087561, 111114);
+INSERT INTO employee VALUES (311115, 'Lucy', 'Yiu', 'Female', 087561, 111115);
+INSERT INTO employee VALUES (311116, 'Kelly', 'Suio', 'Female', 087561, 111116);
+INSERT INTO employee VALUES (311117, 'Kuzyaine', 'Wacvashiee', 'Female', 087561, 111117);
+INSERT INTO employee VALUES (311118, 'Anita', 'Tsoy', 'Female', 087561, 111118);
+INSERT INTO employee VALUES (311119, 'Arlene', 'Grande', 'Female', 087561, 111119);
+INSERT INTO employee VALUES (311120, 'Mitchel', 'Pearson', 'Male', 087561, 111120);
+INSERT INTO employee VALUES (311121, 'Carmen', 'Groose', 'Female', 087561, 111121);
+
+INSERT INTO employeeInfo VALUES (311111, 'Waiter');
+INSERT INTO employeeInfo VALUES (311111, 'Supervisor');
+INSERT INTO employeeInfo VALUES (311112, 'Hostess');
+INSERT INTO employeeInfo VALUES (311112, 'Waiter');
+INSERT INTO employeeInfo VALUES (311113, 'Waiter');
+INSERT INTO employeeInfo VALUES (311113, 'Supervisor');
+INSERT INTO employeeInfo VALUES (311114, 'Waiter');
+INSERT INTO employeeInfo VALUES (311115, 'Waiter');
+INSERT INTO employeeInfo VALUES (311115, 'Supervisor');
+INSERT INTO employeeInfo VALUES (311116, 'Waiter');
+INSERT INTO employeeInfo VALUES (311117, 'Waiter');
+INSERT INTO employeeInfo VALUES (311118, 'Supervisor');
+INSERT INTO employeeInfo VALUES (311119, 'Waiter');
+INSERT INTO employeeInfo VALUES (311120, 'Waiter');
+INSERT INTO employeeInfo VALUES (311121, 'Waiter');
+
+INSERT INTO reservation VALUES (411111, '09:00:00', '11:00:00', 4, TO_DATE('2018-07-30','YYYY-MM-DD'), 211111);
+INSERT INTO reservation VALUES (411112, '09:00:00', '10:30:00', 4, TO_DATE('2018-07-31','YYYY-MM-DD'), 211112);
+INSERT INTO reservation VALUES (411113, '09:30:00', '11:30:00', 2, TO_DATE('2018-07-30','YYYY-MM-DD'), 211113);
+INSERT INTO reservation VALUES (411114, '10:00:00', '12:00:00', 3, TO_DATE('2018-07-30','YYYY-MM-DD'), 211114);
+INSERT INTO reservation VALUES (411115, '10:30:00', '12:00:00', 2, TO_DATE('2018-07-31','YYYY-MM-DD'), 211115);
+INSERT INTO reservation VALUES (411116, '11:00:00', '14:00:00', 6, TO_DATE('2018-07-30','YYYY-MM-DD'), 211116);
+INSERT INTO reservation VALUES (411117, '12:00:00', '13:00:00', 2, TO_DATE('2018-07-30','YYYY-MM-DD'), 211117);
+INSERT INTO reservation VALUES (411118, '12:00:00', '13:00:00', 4, TO_DATE('2018-07-30','YYYY-MM-DD'), 211118);
+INSERT INTO reservation VALUES (411119, '14:00:00', '17:00:00', 8, TO_DATE('2018-07-30','YYYY-MM-DD'), 211119);
+INSERT INTO reservation VALUES (411120, '14:30:00', '13:00:00', 4, TO_DATE('2018-07-31','YYYY-MM-DD'), 211120);
+INSERT INTO reservation VALUES (411121, '14:00:00', '17:00:00', 8, TO_DATE('2018-07-30','YYYY-MM-DD'), 211121);
+INSERT INTO reservation VALUES (411122, '14:30:00', '13:00:00', 4, TO_DATE('2018-07-31','YYYY-MM-DD'), 211122);
+
+INSERT INTO restaurant VALUES (087561, 'Al Refaaee', '09:00-22:00', 'Downtown', '778-441-41-41', 811111, 911111);
+
+INSERT INTO restaurantFoodMenu VALUE (811111, 'Food Menu');
+
+INSERT INTO restaurantMenu VALUE (911111, 'Beverage Menu');
+
+INSERT INTO restaurantInfo VALUES (087561, 'Persian');
+INSERT INTO restaurantInfo VALUES (087561, 'Afghan');
+INSERT INTO restaurantInfo VALUES (087561, 'Greek');
+
+INSERT INTO foodMenu VALUES ('Garden Salad', 5.99, 811111);
+INSERT INTO foodMenu VALUES ('Greek Salad', 6.95, 811111);
+INSERT INTO foodMenu VALUES ('Vegeterian Combo', 13.00, 811111);
+INSERT INTO foodMenu VALUES ('Chopan Kebab', 15.95, 811111);
+INSERT INTO foodMenu VALUES ('Tekka Kebab', 14.95, 811111);
+INSERT INTO foodMenu VALUES ('Chicken Kebab', 15.95, 811111);
+INSERT INTO foodMenu VALUES ('Koobideh', 7.99, 811111);
+INSERT INTO foodMenu VALUES ('Shishlik', 11.99, 811111);
+INSERT INTO foodMenu VALUES ('Qabeli Pallow', 12.95, 811111);
+INSERT INTO foodMenu VALUES ('Mantu Dinner', 13.95, 811111);
+INSERT INTO foodMenu VALUES ('Roast Chicken', 8.49, 811111);
+INSERT INTO foodMenu VALUES ('Ghormeh Sabzi Stew', 8.49, 811111);
+INSERT INTO foodMenu VALUES ('Gheimeh Stew with eggplant', 8.99, 811111);
+INSERT INTO foodMenu VALUES ('Chicken Souvlaki', 13.45, 811111);
+INSERT INTO foodMenu VALUES ('Beef Souvlaki', 14.45, 811111);
+INSERT INTO foodMenu VALUES ('Lamb Souvlaki', 14.45, 811111);
+
+INSERT INTO foodInfo VALUES ('Garden Salad', 'Cucumber');
+INSERT INTO foodInfo VALUES ('Garden Salad', 'Tomatoe');
+INSERT INTO foodInfo VALUES ('Garden Salad', 'Yellow Peppers');
+INSERT INTO foodInfo VALUES ('Garden Salad', 'Greenery');
+INSERT INTO foodInfo VALUES ('Greek Salad', 'Cucumber');
+INSERT INTO foodInfo VALUES ('Greek Salad', 'Tomatoe');
+INSERT INTO foodInfo VALUES ('Greek Salad', 'Red Onions');
+INSERT INTO foodInfo VALUES ('Greek Salad', 'Green Peppers');
+INSERT INTO foodInfo VALUES ('Greek Salad', 'Feta Cheese');
+
+INSERT INTO beverageMenu VALUES ('Tea', 1.95, 911111);
+INSERT INTO beverageMenu VALUES ('Sheer Chai Tea', 2.95, 911111);
+INSERT INTO beverageMenu VALUES ('Coffee', 2.50, 911111);
+INSERT INTO beverageMenu VALUES ('Pop', 1.75, 911111);
+INSERT INTO beverageMenu VALUES ('Juice', 1.85, 911111);
+INSERT INTO beverageMenu VALUES ('Smoothie', 2.85, 911111);
+INSERT INTO beverageMenu VALUES ('Double Smoothie', 5.90, 911111);
+
+INSERT INTO bill VALUES (7012345, 41.37, 4.80, TO_DATE('2018-07-30','YYYY-MM-DD'), '11:12', 087561, 211111);
+INSERT INTO bill VALUES (7012346, 55.19, 7.00, TO_DATE('2018-07-31','YYYY-MM-DD'), '10:32', 087561, 211112);
+INSERT INTO bill VALUES (7012347, 18.30, 2.50, TO_DATE('2018-07-30','YYYY-MM-DD'), '11:35', 087561, 211113);
+INSERT INTO bill VALUES (7012348, 29.10, 3.20, TO_DATE('2018-07-30','YYYY-MM-DD'), '12:02', 087561, 211114);
+INSERT INTO bill VALUES (7012349, 16.75, 1.60, TO_DATE('2018-07-31','YYYY-MM-DD'), '12:12', 087561, 211115);
+INSERT INTO bill VALUES (7023456, 70.88, 7.99, TO_DATE('2018-07-30','YYYY-MM-DD'), '14:01', 087561, 211116);
+INSERT INTO bill VALUES (7023457, 25.23, 2.80, TO_DATE('2018-07-30','YYYY-MM-DD'), '13:07', 087561, 211117);
+INSERT INTO bill VALUES (7023458, 33.17, 4.00, TO_DATE('2018-07-31','YYYY-MM-DD'), '13:10', 087561, 211118);
+INSERT INTO bill VALUES (7023459, 120.78, 15.00, TO_DATE('2018-07-30','YYYY-MM-DD'), '17:08', 087561, 211119);
+INSERT INTO bill VALUES (7034567, 28.50, 3.00, TO_DATE('2018-07-31','YYYY-MM-DD'), '13:03', 087561, 211120);
+
+INSERT INTO customerBill VALUES (211111, 7012345);
+INSERT INTO customerBill VALUES (211112, 7012346);
+INSERT INTO customerBill VALUES (211113, 7012347);
+INSERT INTO customerBill VALUES (211114, 7012348);
+INSERT INTO customerBill VALUES (211115, 7012349);
+INSERT INTO customerBill VALUES (211116, 7023456);
+INSERT INTO customerBill VALUES (211117, 7023457);
+INSERT INTO customerBill VALUES (211118, 7023458);
+INSERT INTO customerBill VALUES (211119, 7023459);
+INSERT INTO customerBill VALUES (211120, 7034567);
