@@ -80,3 +80,7 @@ limit 3;
 ##rank the top three countries with the most successful campaign in terms of dollars and campaigns backed
 
 ##look at campaign lengths and the amount of money raised
+Select DATEDIFF(c1.deadline,c1.launched) as campaign_length_in_days, sum(c1.`pledged`) as pledges
+from campaign c1
+group by DATEDIFF(c1.deadline,c1.launched)
+order by 1 desc
