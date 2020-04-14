@@ -75,7 +75,15 @@ group by c3.category
 order by 2  asc
 limit 3;
 
-##What is the amount the most successful board game company raised and how many backers
+##What is the amount the most successful board game raised and how many backers
+select c1.`name`, sum(c1.`pledged`) as total_pledges, sum(c1.backers) as total_backers
+from campaign c1, sub_category c2
+where c1.`sub_category_id` = c2.id
+and c2.id = 14
+and c1.`outcome`= "successful"
+group by c1.name
+order by 2 desc, 3 desc
+limit 1
 
 ##rank the top three countries with the most successful campaign in terms of dollars and campaigns backed
 select c2.name as country_name, sum(c1.pledged) as total_pledges, sum(c1.backers) as total_backers
