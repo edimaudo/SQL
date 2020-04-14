@@ -78,6 +78,12 @@ limit 3;
 ##What is the amount the most successful board game company raised and how many backers
 
 ##rank the top three countries with the most successful campaign in terms of dollars and campaigns backed
+select c2.name as country_name, sum(c1.pledged) as total_pledges, sum(c1.backers) as total_backers
+from campaign c1, country c2
+where c1.country_id = c2.`id`
+group by c2.name
+order by 2 desc, 3 desc
+limit 3
 
 ##look at campaign lengths and the amount of money raised
 Select DATEDIFF(c1.deadline,c1.launched) as campaign_length_in_days, sum(c1.`pledged`) as pledges
