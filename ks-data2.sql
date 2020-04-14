@@ -27,14 +27,53 @@ group by c.outcome,DATEDIFF(c.deadline,c.launched)) as c1
 group by c1.outcome
 
 ##What country raise the most amount
+Select c2.name as country_name, sum(c1.pledged) as total
+from campaign c1, country c2
+where c1.`country_id` = c2.`id`
+and c1.outcome = "successful"
+group by c2.name
+order by sum(c1.pledged) DESC
+limit 1
 
 ##top three categories with the most backers, length of campaigns
+SELECT c3.category, sum(c3.number_of_backers), sum(c3.campaign_length_in_days)
+from (Select c2.`name` as category, sum(c1.`backers`) as number_of_backers, DATEDIFF(c1.deadline,c1.launched) as campaign_length_in_days
+from campaign c1, category c2
+where c1.`sub_category_id` = c2.`id`
+group by c2.`name`,DATEDIFF(c1.deadline,c1.launched)) c3
+group by c3.category
+order by 2 DESC
+limit 3;
 
 ##top three categories with the least backers and length of campaigns
+SELECT c3.category, sum(c3.number_of_backers), sum(c3.campaign_length_in_days)
+from (Select c2.`name` as category, sum(c1.`backers`) as number_of_backers, DATEDIFF(c1.deadline,c1.launched) as campaign_length_in_days
+from campaign c1, category c2
+where c1.`sub_category_id` = c2.`id`
+group by c2.`name`,DATEDIFF(c1.deadline,c1.launched)) c3
+group by c3.category
+order by 2 asc
+limit 3;
 
 ##top three categories that raised the most money 
+SELECT c3.category, sum(c3.pledges)
+from (Select c2.`name` as category, sum(c1.`pledged`) as pledges
+from campaign c1, category c2
+where c1.`sub_category_id` = c2.`id`
+group by c2.`name`) c3
+group by c3.category
+order by 2  desc
+limit 3;
 
 ##top three categories that raised the least money 
+SELECT c3.category, sum(c3.pledges)
+from (Select c2.`name` as category, sum(c1.`pledged`) as pledges
+from campaign c1, category c2
+where c1.`sub_category_id` = c2.`id`
+group by c2.`name`) c3
+group by c3.category
+order by 2  asc
+limit 3;
 
 ##What is the amount the most successful board game company raised and how many backers
 
